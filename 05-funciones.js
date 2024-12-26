@@ -1,16 +1,16 @@
-//> Declaración
+//> Declaración de una función
 function getResult() {
   return "Results";
 }
 getResult(); //> Results
 
-//> Expresión
+//> Expresión de una función
 const getResult = function () {
   return "Results";
 };
 getResult(); //> Results
 
-// Number es el parámetro de la función
+// number es el parámetro de la función
 function getDouble(number) {
   return number * 2;
 }
@@ -63,16 +63,23 @@ const courseCloned = { ...course };
 // ARRAY
 const numbers = [1, 2, 3];
 // Clonado con slice()
-const numbersCloned = myArray.slice();
+const clonedNumbers = numbers.slice();
 // Clonado con el spread operator
-const numbersCloned = [...myArray];
+const spreadClonedNumbers = [...numbers];
+
+console.log(clonedNumbers);
+console.log(spreadClonedNumbers);
+
 
 //> También podemos usar el operador spread para concatenar arrays:
 const numbersA = [1, 2, 3];
 const numbersB = [4, 5, 6];
 
 // Con concat
-const newArray = numbersA.concat(numbersB); //> [1, 2, 3, 4, 5, 6]
+const newArray1 = numbersA.concat(numbersB); //> [1, 2, 3, 4, 5, 6]
 
 // Con spread
-const newArray = [...numbersA, ...numbersB]; //> [1, 2, 3, 4, 5, 6]
+const newArray2 = [...numbersA, ...numbersB]; //> [1, 2, 3, 4, 5, 6]
+
+console.log(newArray1);
+console.log(newArray2);

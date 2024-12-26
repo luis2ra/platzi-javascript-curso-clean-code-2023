@@ -26,31 +26,3 @@ Developer.prototype.writeCode = function (coffee) {
 var dev = new Developer("Alex");
 dev.greet(); //> Hello I am Alex
 dev.writeCode(); //> I need coffeeee
-
-//> Herencia clases
-class Person {
-  constructor(person) {
-    this.name = name;
-  }
-
-  greet() {
-    return `Hello I am ${this.name}`;
-  }
-}
-
-// ES6
-class Developer extends Person {
-  constructor(name) {
-    super(name);
-  }
-
-  writeCode(coffee) {
-    coffee
-      ? console.log("I am developing new feature")
-      : console.log("I need coffeeee");
-  }
-}
-
-const dev = new Developer("Alex");
-dev.greet(); //> Hello I am Alex
-dev.writeCode(); //> I need coffeeee

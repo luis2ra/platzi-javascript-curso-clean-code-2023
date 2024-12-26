@@ -1,4 +1,4 @@
-// var
+// var - Anterior a ES6
 var age = 28;
 {
   console.log("Valor dentro del bloque", age); // 28
@@ -9,7 +9,7 @@ console.log("Valor fuera del bloque", age); // 29
 age = age * 2;
 console.log("Valor cambiado", age); // 58
 
-// let
+// let - ES6
 let age = 28;
 {
   console.log("Valor dentro del bloque", age); // error
@@ -20,7 +20,7 @@ console.log("Valor fuera del bloque", age); // 28
 age = age * 2;
 console.log("Valor cambiado", age); // 56
 
-// const
+// const - ES6
 const PI = 3.14159;
 PI = PI * 2; // error
 console.log("Valor cambiado", PI); // no se ejecuta
